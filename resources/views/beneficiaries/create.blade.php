@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="card shadow p-4 rounded mb-4">
-    <h3 class="mb-4 text-success">Tambah Data Penerima</h3>
+    <h3 class="mb-4 text-warning">Tambah Data Penerima</h3>
 
     @if ($errors->any())
         <div class="alert alert-danger"><ul class="mb-0">@foreach ($errors->all() as $e)<li>{{ $e }}</li>@endforeach</ul></div>
@@ -44,8 +44,8 @@
             </select>
         </div>
 
-        <button type="submit" class="btn btn-success"><i class="bi bi-save"></i> Simpan</button>
-        <a href="{{ route('beneficiaries.index') }}" class="btn btn-outline-success">Kembali</a>
+        <button type="submit" class="btn btn-warning"><i class="bi bi-save"></i> Simpan</button>
+        <a href="{{ route('beneficiaries.index') }}" class="btn btn-outline-warning">Kembali</a>
     </form>
 </div>
 @endsection
